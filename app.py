@@ -152,7 +152,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title('🎨 Tablero Inteligente')
+st.markdown("<h1 style='color: white; text-align: center; font-size: 2.5rem; margin-bottom: 1.5rem;'>🎨 Tablero Inteligente</h1>", unsafe_allow_html=True)
 
 # Barra lateral
 with st.sidebar:
