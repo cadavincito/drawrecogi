@@ -10,23 +10,23 @@ from streamlit_drawable_canvas import st_canvas
 # Configuración de la página (debe ser el primer comando de Streamlit)
 st.set_page_config(page_title='Tablero Inteligente', layout="wide")
 
-# CSS personalizado para modo oscuro y centrado
+# CSS personalizado para tema claro y centrado
 st.markdown("""
     <style>
-        /* Modo oscuro */
+        /* Tema claro */
         body {
-            background-color: #121212;
-            color: #ffffff;
+            background-color: #f9f9f9;
+            color: #333333;
             font-family: 'Arial', sans-serif;
         }
         .stApp {
-            background-color: #1e1e1e;
+            background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         .stButton button {
-            background-color: #bb86fc;
+            background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
@@ -35,25 +35,25 @@ st.markdown("""
             cursor: pointer;
         }
         .stButton button:hover {
-            background-color: #9b59b6;
+            background-color: #45a049;
         }
         .stSidebar {
-            background-color: #1e1e1e;
+            background-color: #f0f0f0;
             border-radius: 10px;
             padding: 15px;
         }
         .stSidebar h2, .stSidebar h3, .stSidebar p {
-            color: #ffffff;
+            color: #333333;
         }
         .stTextInput input {
-            background-color: #333333;
-            color: #ffffff; /* Cambiado a blanco */
-            border: 1px solid #555555;
+            background-color: #ffffff;
+            color: #333333;
+            border: 1px solid #cccccc;
             border-radius: 5px;
             padding: 10px;
         }
         .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
-            color: #ffffff; /* Aseguramos que el título sea blanco */
+            color: #333333;
         }
         /* Centrando todos los elementos */
         .main {
@@ -76,8 +76,8 @@ with st.sidebar:
 
 # Parámetros del lienzo
 drawing_mode = "freedraw"
-stroke_color = "#FFFFFF"  # Blanco para modo oscuro
-bg_color = "#333333"  # Gris oscuro para el fondo del lienzo
+stroke_color = "#000000"  # Negro para modo claro
+bg_color = "#f0f0f0"  # Gris claro para el fondo del lienzo
 
 # Componente de lienzo
 canvas_result = st_canvas(
