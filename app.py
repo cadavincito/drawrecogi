@@ -18,7 +18,7 @@ st.markdown("""
         /* Tema oscuro */
         body {
             background-color: #1a202c;
-            color: #ffffff;
+            color: #000000;
             font-family: 'Inter', sans-serif;
         }
         .stApp {
