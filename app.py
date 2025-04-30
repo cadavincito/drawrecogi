@@ -32,12 +32,20 @@ st.markdown("""
         
         /* Encabezados */
         .stMarkdown h1 {
-            color: #7dd3fc;
+            color: white !important;
             font-weight: 700;
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
             text-align: center;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Textos específicos en blanco */
+        .stTextInput label p {
+            color: white !important;
+        }
+        .stCaption {
+            color: white !important;
         }
         
         /* Botones */
